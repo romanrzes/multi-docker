@@ -16,7 +16,7 @@ after_success:
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Tako thos imagas and push them to docker hub
-  - docker push multi-client
-  - docker push multi-nging
-  - docker push multi-server
-  - docker push multi-worker
+  - docker push romanrzes/multi-client
+  - docker push romanrzes/multi-nging
+  - docker push romanrzes/multi-server
+  - docker push romanrzes/multi-worker
