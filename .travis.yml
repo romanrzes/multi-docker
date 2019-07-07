@@ -9,10 +9,10 @@ script:
   - docker run -e CI=true react-test npm test -- --coverage
 
 after_success:
-  - docker build -t multi-client ./client
-  - docker build -t multi-nginx ./nginx
-  - docker build -t multi-server ./server
-  - docker build -t multi-worker ./worker
+  - docker build -t romanrzes/multi-client ./client
+  - docker build -t romanrzes/multi-nginx ./nginx
+  - docker build -t romanrzes/multi-server ./server
+  - docker build -t romanrzes/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Tako thos imagas and push them to docker hub
