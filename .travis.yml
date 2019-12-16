@@ -20,3 +20,5 @@ after_success:
   - docker push romanrzes/multi-nginx
   - docker push romanrzes/multi-server
   - docker push romanrzes/multi-worker
+
+  # Slavko
